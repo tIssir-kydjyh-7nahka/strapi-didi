@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * destination router.
+ * geo-name router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::destination.destination');
+module.exports = createCoreRouter('api::geo-name.geo-name');

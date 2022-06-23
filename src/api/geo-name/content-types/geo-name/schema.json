@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "destinations",
+  "collectionName": "geo_names",
   "info": {
-    "singularName": "destination",
-    "pluralName": "destinations",
-    "displayName": "Destination",
+    "singularName": "geo-name",
+    "pluralName": "geo-names",
+    "displayName": "GeoName",
     "description": ""
   },
   "options": {
@@ -13,14 +13,22 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "pluginOptions": {},
       "type": "string",
       "required": true
     },
-    "territory": {
+    "parent": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::territory.territory"
+      "target": "api::geo-name.geo-name"
+    },
+    "code": {
+      "type": "string"
+    },
+    "geo_JSON": {
+      "type": "json"
+    },
+    "description": {
+      "type": "string"
     },
     "status": {
       "type": "boolean",

@@ -63,15 +63,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "user_role": {
-      "type": "enumeration",
-      "enum": [
-        "SysAdmin",
-        "Content manager",
-        "Event manager",
-        "Player"
-      ]
-    },
     "phone_number": {
       "type": "string"
     },

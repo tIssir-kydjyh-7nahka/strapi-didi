@@ -24,7 +24,8 @@
       "target": "api::question.question"
     },
     "status": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     }
   }
 }

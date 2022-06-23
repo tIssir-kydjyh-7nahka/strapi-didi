@@ -24,21 +24,22 @@
         "Family",
         "Standart",
         "Hikers"
-      ]
+      ],
+      "required": true
     },
     "status": {
       "type": "boolean",
       "required": true
     },
-    "destinations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::destination.destination"
-    },
     "correct_answer": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::answer.answer"
+    },
+    "destination": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::geo-name.geo-name"
     }
   }
 }
