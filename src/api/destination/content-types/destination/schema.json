@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinations",
+  "info": {
+    "singularName": "destination",
+    "pluralName": "destinations",
+    "displayName": "Destination",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "territory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::territory.territory"
+    },
+    "status": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

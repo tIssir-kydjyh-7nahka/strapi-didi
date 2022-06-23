@@ -63,11 +63,36 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "tests": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::test.test",
-      "mappedBy": "users_permissions_user"
+    "user_role": {
+      "type": "enumeration",
+      "enum": [
+        "SysAdmin",
+        "Content manager",
+        "Event manager",
+        "Player"
+      ]
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "birth_date": {
+      "type": "date"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    "user_status": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Inactive",
+        "Suspended"
+      ]
     }
   }
 }

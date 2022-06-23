@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "territories",
+  "info": {
+    "singularName": "territory",
+    "pluralName": "territories",
+    "displayName": "Territory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "pluginOptions": {},
+      "type": "boolean",
+      "default": true
+    },
+    "country": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "state": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "polygon_JSON": {
+      "type": "json"
+    }
+  }
+}
