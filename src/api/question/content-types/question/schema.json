@@ -25,7 +25,8 @@
         "Standart",
         "Hikers"
       ],
-      "required": true
+      "required": true,
+      "default": "Standart"
     },
     "status": {
       "type": "boolean",

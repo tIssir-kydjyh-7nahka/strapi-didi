@@ -33,6 +33,13 @@
     "status": {
       "type": "boolean",
       "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Destination",
+        "Territory"
+      ]
     }
   }
 }

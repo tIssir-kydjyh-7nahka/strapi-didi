@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "groups",
+  "collectionName": "player_in_groups",
   "info": {
-    "singularName": "group",
-    "pluralName": "groups",
-    "displayName": "Group",
+    "singularName": "player-in-group",
+    "pluralName": "player-in-groups",
+    "displayName": "GroupPlayer",
     "description": ""
   },
   "options": {
@@ -12,11 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
+    "group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::group.group"
     },
-    "owner": {
+    "player": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"

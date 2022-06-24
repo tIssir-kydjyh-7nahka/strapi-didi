@@ -17,7 +17,7 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "game_type": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "Single",
@@ -33,6 +33,20 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::group.group"
+    },
+    "destination": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::geo-name.geo-name"
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Family",
+        "Standart",
+        "Hikers"
+      ],
+      "required": true
     }
   }
 }
