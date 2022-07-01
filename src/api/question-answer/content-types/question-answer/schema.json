@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question_answers",
+  "info": {
+    "singularName": "question-answer",
+    "pluralName": "question-answers",
+    "displayName": "QuestionAnswer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "game": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::game.game"
+    },
+    "question": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::question.question"
+    },
+    "answer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::answer.answer"
+    },
+    "player": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::game-player.game-player"
+    },
+    "result": {
+      "type": "boolean"
+    }
+  }
+}

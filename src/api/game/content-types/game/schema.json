@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "player": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "type": {
       "type": "enumeration",
       "enum": [
@@ -39,14 +34,8 @@
       "relation": "oneToOne",
       "target": "api::geo-name.geo-name"
     },
-    "difficulty": {
-      "type": "enumeration",
-      "enum": [
-        "Family",
-        "Standart",
-        "Hikers"
-      ],
-      "required": true
+    "conquest": {
+      "type": "boolean"
     }
   }
 }
