@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  geo-name controller
+ *  location controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::geo-name.geo-name');
+module.exports = createCoreController('api::location.location');

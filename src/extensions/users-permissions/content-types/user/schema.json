@@ -66,24 +66,24 @@
     "phone": {
       "type": "string"
     },
-    "birth": {
-      "type": "date"
-    },
-    "gender": {
-      "type": "enumeration",
-      "enum": [
-        "Male",
-        "Female",
-        "Other"
-      ]
-    },
     "status": {
       "type": "enumeration",
       "enum": [
         "Active",
         "Inactive",
         "Suspended"
-      ]
+      ],
+      "default": "Active",
+      "required": false
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Family",
+        "Standart",
+        "Hikers"
+      ],
+      "default": "Standart"
     }
   }
 }

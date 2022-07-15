@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * geo-name service.
+ * location service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::geo-name.geo-name');
+module.exports = createCoreService('api::location.location');

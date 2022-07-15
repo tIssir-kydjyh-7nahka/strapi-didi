@@ -37,10 +37,10 @@
       "relation": "oneToOne",
       "target": "api::answer.answer"
     },
-    "destination": {
+    "location": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::geo-name.geo-name"
+      "target": "api::location.location"
     }
   }
 }
