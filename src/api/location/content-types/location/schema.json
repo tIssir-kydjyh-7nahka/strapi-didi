@@ -32,14 +32,19 @@
       ],
       "required": true
     },
-    "code": {
-      "type": "integer"
-    },
     "lat": {
       "type": "float"
     },
     "lon": {
       "type": "float"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "polygon": {
+      "type": "json"
     }
   }
 }

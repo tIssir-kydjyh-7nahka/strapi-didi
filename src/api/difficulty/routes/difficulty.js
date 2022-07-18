@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * game-player router.
+ * difficulty router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::game-player.game-player');
+module.exports = createCoreRouter('api::difficulty.difficulty');

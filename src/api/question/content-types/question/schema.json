@@ -8,25 +8,15 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "content": {
+    "question": {
       "pluginOptions": {},
       "type": "text",
       "default": "NULL",
       "required": true
-    },
-    "difficulty": {
-      "type": "enumeration",
-      "enum": [
-        "Family",
-        "Standart",
-        "Hikers"
-      ],
-      "required": true,
-      "default": "Standart"
     },
     "status": {
       "type": "boolean",
@@ -41,6 +31,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::location.location"
+    },
+    "difficulty": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::difficulty.difficulty"
     }
   }
 }

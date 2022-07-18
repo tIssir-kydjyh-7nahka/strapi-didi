@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "difficulties",
+  "info": {
+    "singularName": "difficulty",
+    "pluralName": "difficulties",
+    "displayName": "Difficulty",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

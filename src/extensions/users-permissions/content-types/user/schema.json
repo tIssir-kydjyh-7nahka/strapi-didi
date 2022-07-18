@@ -77,13 +77,15 @@
       "required": false
     },
     "difficulty": {
-      "type": "enumeration",
-      "enum": [
-        "Family",
-        "Standart",
-        "Hikers"
-      ],
-      "default": "Standart"
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::difficulty.difficulty"
+    },
+    "lives": {
+      "type": "integer"
+    },
+    "bonuses": {
+      "type": "integer"
     }
   }
 }

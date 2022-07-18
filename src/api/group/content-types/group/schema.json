@@ -21,11 +21,13 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "invite_code": {
-      "type": "string"
-    },
     "invite_link": {
       "type": "string"
+    },
+    "difficulty": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::difficulty.difficulty"
     }
   }
 }

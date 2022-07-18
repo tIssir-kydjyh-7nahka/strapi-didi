@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "content": {
+    "answer": {
       "pluginOptions": {},
       "type": "string",
       "required": true,

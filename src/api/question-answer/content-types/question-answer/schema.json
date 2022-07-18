@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -26,11 +26,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::answer.answer"
-    },
-    "player": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::game-player.game-player"
     },
     "result": {
       "type": "boolean"

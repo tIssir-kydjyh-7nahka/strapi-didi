@@ -1,26 +1,26 @@
 {
   "kind": "collectionType",
-  "collectionName": "game_players",
+  "collectionName": "group_players",
   "info": {
-    "singularName": "game-player",
-    "pluralName": "game-players",
-    "displayName": "GamePlayer",
+    "singularName": "group-player",
+    "pluralName": "group-players",
+    "displayName": "GroupPlayer",
     "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "player": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "game": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::game.game"
+    },
+    "group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::group.group"
     },
     "status": {
       "type": "enumeration",
