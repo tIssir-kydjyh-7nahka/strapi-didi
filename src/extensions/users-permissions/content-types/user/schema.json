@@ -76,16 +76,30 @@
       "default": "Active",
       "required": false
     },
-    "difficulty": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::difficulty.difficulty"
-    },
     "lives": {
       "type": "integer"
     },
-    "bonuses": {
+    "points": {
       "type": "integer"
+    },
+    "answer_bonus": {
+      "type": "integer"
+    },
+    "time_bonus": {
+      "type": "integer"
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Family",
+        "Standart",
+        "Hikers"
+      ]
+    },
+    "character": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::character.character"
     }
   }
 }

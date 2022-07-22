@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_answers",
+  "info": {
+    "singularName": "game-answer",
+    "pluralName": "game-answers",
+    "displayName": "GameAnswer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "game": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::game.game"
+    },
+    "question": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::question.question"
+    },
+    "answer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::answer.answer"
+    },
+    "result": {
+      "type": "boolean"
+    },
+    "time": {
+      "type": "integer"
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Family",
+        "Standart",
+        "Hikers"
+      ]
+    }
+  }
+}

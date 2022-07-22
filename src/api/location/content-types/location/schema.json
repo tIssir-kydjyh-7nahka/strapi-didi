@@ -43,7 +43,7 @@
       "relation": "oneToOne",
       "target": "api::location.location"
     },
-    "polygon": {
+    "map": {
       "type": "json"
     }
   }

@@ -35,8 +35,16 @@
       "relation": "oneToOne",
       "target": "api::location.location"
     },
-    "conquest": {
-      "type": "boolean"
+    "game_link": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Family",
+        "Standart",
+        "Hikers"
+      ]
     }
   }
 }
