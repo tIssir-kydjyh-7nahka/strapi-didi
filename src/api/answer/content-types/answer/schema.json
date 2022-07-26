@@ -23,9 +23,10 @@
       "relation": "oneToOne",
       "target": "api::question.question"
     },
-    "status": {
+    "is_active": {
       "type": "boolean",
-      "required": true
+      "required": true,
+      "default": true
     },
     "description": {
       "type": "string"

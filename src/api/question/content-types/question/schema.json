@@ -18,9 +18,10 @@
       "default": "NULL",
       "required": true
     },
-    "status": {
+    "is_active": {
       "type": "boolean",
-      "required": true
+      "required": true,
+      "default": true
     },
     "correct_answer": {
       "type": "relation",
@@ -38,7 +39,9 @@
         "Family",
         "Standart",
         "Hikers"
-      ]
+      ],
+      "required": true,
+      "default": "Family"
     }
   }
 }

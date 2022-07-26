@@ -13,24 +13,19 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "status": {
-      "type": "boolean"
-    },
-    "animation": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "is_active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
     },
     "stage": {
       "type": "integer"
+    },
+    "animation": {
+      "type": "json"
     }
   }
 }

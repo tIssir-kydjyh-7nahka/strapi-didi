@@ -20,8 +20,10 @@
       "type": "string",
       "required": false
     },
-    "status": {
-      "type": "boolean"
+    "is_active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
     },
     "type": {
       "type": "enumeration",

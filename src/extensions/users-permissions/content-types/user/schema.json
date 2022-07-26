@@ -74,7 +74,7 @@
         "Suspended"
       ],
       "default": "Active",
-      "required": false
+      "required": true
     },
     "lives": {
       "type": "integer"
@@ -94,7 +94,8 @@
         "Family",
         "Standart",
         "Hikers"
-      ]
+      ],
+      "required": true
     },
     "character": {
       "type": "relation",

@@ -17,11 +17,6 @@
       "relation": "oneToOne",
       "target": "api::location.location"
     },
-    "player": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "game_player": {
       "type": "relation",
       "relation": "oneToOne",
