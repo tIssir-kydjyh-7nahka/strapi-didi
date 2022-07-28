@@ -14,8 +14,8 @@ variables:
   AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
   AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
 
-  ALLOWED_DOMAINS: "gss.stemsc.com"
-  SITES: "gss.stemsc.com=localhost:3000"
+  ALLOWED_DOMAINS: "didi.stemsc.com"
+  SITES: "didi.stemsc.com=localhost:3000"
 
 stages:
   - build
@@ -56,14 +56,14 @@ stages:
 build_nginx:
   stage: build
   variables:
-    CI_APPLICATION_REPOSITORY: $GSS_NGINX_CI_APPLICATION_REPOSITORY
+    CI_APPLICATION_REPOSITORY: $didi_NGINX_CI_APPLICATION_REPOSITORY
   <<: *build_nginx
   when: manual
 
 build_app:
   stage: build
   variables:
-    CI_APPLICATION_REPOSITORY: $GSS_CI_APPLICATION_REPOSITORY
+    CI_APPLICATION_REPOSITORY: $didi_CI_APPLICATION_REPOSITORY
   <<: *build_app
   when: manual
 
@@ -73,10 +73,10 @@ deploy_nginx:
   tags:
     - docker-dind
   variables:
-    CI_APPLICATION_REPOSITORY: $GSS_NGINX_CI_APPLICATION_REPOSITORY
-    CI_AWS_ECS_CLUSTER: "gss-cluster"
-    CI_AWS_ECS_SERVICE: "gss"
-    CI_AWS_ECS_TASK_DEFINITION: "gss"
+    CI_APPLICATION_REPOSITORY: $didi_NGINX_CI_APPLICATION_REPOSITORY
+    CI_AWS_ECS_CLUSTER: "didi-cluster"
+    CI_AWS_ECS_SERVICE: "didi"
+    CI_AWS_ECS_TASK_DEFINITION: "didi"
   before_script:
     - amazon-linux-extras install docker
     - yum install -y jq

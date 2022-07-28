@@ -13,7 +13,7 @@ APP_KEYS
 ["testKey21", "testKey22"]
 
 DATABASE_URL
-postgres://postgres:mypassword@databasegss.c6d4qw84ftau.eu-west-2.rds.amazonaws.com:5432/postgres
+postgres://postgres:mypassword@databasedidi.c6d4qw84ftau.eu-west-2.rds.amazonaws.com:5432/postgres
 
 JWT_SECRET
 jwtsicretnumberone1
