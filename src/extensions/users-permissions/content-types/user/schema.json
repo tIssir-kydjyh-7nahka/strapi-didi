@@ -101,6 +101,43 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::character.character"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "English",
+        "Hebrew"
+      ],
+      "default": "English"
+    },
+    "user_role": {
+      "type": "enumeration",
+      "enum": [
+        "Player",
+        "Content Manager",
+        "Event Manager",
+        "Administrator"
+      ]
+    },
+    "suspend_reason": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    "birthdate": {
+      "type": "date"
+    },
+    "mobile": {
+      "type": "string"
     }
   }
 }
