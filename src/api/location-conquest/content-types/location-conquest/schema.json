@@ -17,10 +17,10 @@
       "relation": "oneToOne",
       "target": "api::location.location"
     },
-    "game_player": {
+    "user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::game-player.game-player"
+      "target": "plugin::users-permissions.user"
     }
   }
 }
