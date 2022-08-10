@@ -12,18 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "name_en": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {}
     },
-    "description": {
+    "description_en": {
       "type": "string",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "is_active": {
       "type": "boolean",
       "required": true,
-      "default": true
+      "default": true,
+      "pluginOptions": {}
     },
     "type": {
       "type": "enumeration",
@@ -32,13 +35,8 @@
         "Territory",
         "Destination"
       ],
-      "required": true
-    },
-    "lat": {
-      "type": "float"
-    },
-    "lon": {
-      "type": "float"
+      "required": true,
+      "pluginOptions": {}
     },
     "parent": {
       "type": "relation",
@@ -46,7 +44,23 @@
       "target": "api::location.location"
     },
     "map": {
-      "type": "json"
+      "type": "json",
+      "pluginOptions": {}
+    },
+    "name_he": {
+      "type": "string"
+    },
+    "description_he": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lon": {
+      "type": "float"
+    },
+    "zoom": {
+      "type": "float"
     }
   }
 }

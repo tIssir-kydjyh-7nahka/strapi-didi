@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "answer": {
+    "answer_en": {
       "pluginOptions": {},
       "type": "string",
       "required": true,
@@ -28,7 +28,13 @@
       "required": true,
       "default": true
     },
-    "description": {
+    "description_en": {
+      "type": "string"
+    },
+    "answer_he": {
+      "type": "string"
+    },
+    "description_he": {
       "type": "string"
     }
   }

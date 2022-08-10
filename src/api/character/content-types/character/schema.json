@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "character": {
       "type": "string",
       "required": true
     },
@@ -21,11 +21,18 @@
       "required": true,
       "default": true
     },
-    "stage": {
+    "conquest_parameter": {
       "type": "integer"
     },
     "animation": {
       "type": "json"
+    },
+    "event_type": {
+      "type": "enumeration",
+      "enum": [
+        "Correct",
+        "Wrong"
+      ]
     }
   }
 }

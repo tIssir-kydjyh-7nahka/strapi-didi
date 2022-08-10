@@ -32,6 +32,9 @@
         "Accepted",
         "Decline"
       ]
+    },
+    "game_time": {
+      "type": "float"
     }
   }
 }

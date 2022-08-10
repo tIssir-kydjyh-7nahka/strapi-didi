@@ -31,9 +31,6 @@
       "type": "boolean",
       "required": true
     },
-    "time": {
-      "type": "integer"
-    },
     "difficulty": {
       "type": "enumeration",
       "enum": [
