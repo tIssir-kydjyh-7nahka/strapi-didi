@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "phrases",
+  "info": {
+    "singularName": "phrase",
+    "pluralName": "phrases",
+    "displayName": "Phrase"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}

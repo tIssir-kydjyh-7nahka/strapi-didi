@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "translates",
+  "info": {
+    "singularName": "translate",
+    "pluralName": "translates",
+    "displayName": "Translate"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "phrase": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::phrase.phrase"
+    },
+    "platform": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::platform.platform"
+    },
+    "translate": {
+      "type": "string"
+    }
+  }
+}
