@@ -4,7 +4,8 @@
   "info": {
     "singularName": "translate",
     "pluralName": "translates",
-    "displayName": "Translate"
+    "displayName": "Translate",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -28,6 +29,11 @@
     },
     "translate": {
       "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
     }
   }
 }

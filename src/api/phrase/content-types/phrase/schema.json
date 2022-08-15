@@ -4,7 +4,8 @@
   "info": {
     "singularName": "phrase",
     "pluralName": "phrases",
-    "displayName": "Phrase"
+    "displayName": "Phrase",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -13,11 +14,6 @@
   "attributes": {
     "key": {
       "type": "string"
-    },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
     }
   }
 }
