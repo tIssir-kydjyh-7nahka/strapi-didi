@@ -4,20 +4,28 @@
   "info": {
     "singularName": "activity-log",
     "pluralName": "activity-logs",
-    "displayName": "ActivityLog"
+    "displayName": "ActivityLog",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "event": {
-      "type": "string"
-    },
     "user": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "event": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
     }
   }
 }

@@ -14,7 +14,7 @@
   "attributes": {
     "character": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "is_active": {
       "type": "boolean",
@@ -27,12 +27,16 @@
     "animation": {
       "type": "json"
     },
-    "event_type": {
+    "scenario": {
       "type": "enumeration",
       "enum": [
-        "Correct",
-        "Wrong"
+        "correct",
+        "wrong",
+        "idle"
       ]
+    },
+    "stage": {
+      "type": "string"
     }
   }
 }

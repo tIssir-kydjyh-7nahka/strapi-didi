@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "system_messages",
+  "info": {
+    "singularName": "system-message",
+    "pluralName": "system-messages",
+    "displayName": "SystemMessage"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "EN",
+        "HE"
+      ],
+      "required": true
+    },
+    "message": {
+      "type": "richtext"
+    }
+  }
+}

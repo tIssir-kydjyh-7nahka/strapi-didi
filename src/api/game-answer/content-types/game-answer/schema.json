@@ -15,7 +15,7 @@
     "game": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::game.game"
+      "target": "api::game-player.game-player"
     },
     "question": {
       "type": "relation",
@@ -29,16 +29,7 @@
     },
     "result": {
       "type": "boolean",
-      "required": true
-    },
-    "difficulty": {
-      "type": "enumeration",
-      "enum": [
-        "Family",
-        "Standart",
-        "Hikers"
-      ],
-      "required": true
+      "required": false
     }
   }
 }
