@@ -25,7 +25,7 @@
     "points": {
       "type": "integer"
     },
-    "status": {
+    "invtitation_status": {
       "type": "enumeration",
       "enum": [
         "Pending",
@@ -35,6 +35,13 @@
     },
     "game_time": {
       "type": "float"
+    },
+    "game_status": {
+      "type": "enumeration",
+      "enum": [
+        "Win",
+        "Losing"
+      ]
     }
   }
 }
