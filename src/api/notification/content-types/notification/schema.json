@@ -4,7 +4,8 @@
   "info": {
     "singularName": "notification",
     "pluralName": "notifications",
-    "displayName": "Notification"
+    "displayName": "Notification",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -27,6 +28,22 @@
     },
     "video": {
       "type": "string"
+    },
+    "key": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Auto",
+        "Manual"
+      ]
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

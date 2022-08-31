@@ -4,7 +4,8 @@
   "info": {
     "singularName": "parameter",
     "pluralName": "parameters",
-    "displayName": "Parameter"
+    "displayName": "Parameter",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -15,6 +16,9 @@
       "type": "string"
     },
     "value": {
+      "type": "string"
+    },
+    "description": {
       "type": "string"
     }
   }
